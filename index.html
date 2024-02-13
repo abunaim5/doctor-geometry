@@ -205,36 +205,37 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle card -->
+
+                <!-- Ellipse card -->
                 <div class="card border-2 border-gray-300 rounded-md">
                     <figure class="px-10 pt-10">
-                        <img src="images/triangle.png" alt="triangle" class="" />
+                        <img src="images/ellipse.png" alt="ellipse" class="" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl text-gray-700 font-bold">Triangle</h2>
-                        <p class="text-xl text-gray-600 mb-4">Area (A) = 0.5 X b X h</p>
-                        <!--  Triangle input container -->
+                        <h2 class="card-title text-2xl text-gray-700 font-bold">Ellipse</h2>
+                        <p class="text-xl text-gray-600 mb-4">Area (A) = πab</p>
+                        <!--  Ellipse input container -->
                         <div class="flex w-full gap-2 mb-8">
-                            <!-- Base input container -->
+                            <!-- Major length input container -->
                             <div class="flex items-center gap-2">
                                 <input class="bg-gray-100 text-lg outline-none p-2 rounded-md w-full" type="text"
-                                    name="base" id="triangle-base" placeholder="Base">
+                                    name="major" id="ellipse-major" placeholder="a">
                                 <span class="text-lg text-gray-600">cm</span>
                             </div>
-                            <!-- Height input container -->
+                            <!-- Minor length input container -->
                             <div class="flex items-center gap-2">
                                 <input class="bg-gray-100 text-lg outline-none p-2 rounded-md w-full" type="text"
-                                    name="height" id="triangle-height" placeholder="Height">
+                                    name="minor" id="ellipse-minor" placeholder="b">
                                 <span class="text-lg text-gray-600">cm</span>
                             </div>
                         </div>
                         <!-- display calculated area -->
                         <div>
                             <p class="text-xl text-gray-600 mb-4">Area: <span
-                                    id="triangle-area">0</span><span>cm<sup>2</sup></span></p>
+                                    id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions w-full">
-                            <button class="btn bg-sky-500 text-white font-bold text-xl
+                            <button onclick="calculateEllipseArea()" class="btn bg-sky-500 text-white font-bold text-xl
                         w-full border-none hover:bg-sky-500  rounded-md">Calculate</button>
                         </div>
                     </div>
@@ -252,6 +253,7 @@
     <script src="js/parallelogram.js"></script>
     <script src="js/rhombus.js"></script>
     <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
     <script src="js/commonFunction.js"></script>
 </body>
 
