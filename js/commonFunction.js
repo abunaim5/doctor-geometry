@@ -8,7 +8,6 @@ function getInputValueById(inputId) {
 // Set elements inner text
 function setInnerTextById(elementId, area) {
     const getElement = document.getElementById(elementId);
-    console.log(getElement);
     const setInnerText = getElement.innerText = area;
     return setInnerText;
 }
